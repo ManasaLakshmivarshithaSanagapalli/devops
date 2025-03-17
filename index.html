@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Main container */
+        .a {
+            background-color: white;
+            width: 400px;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border: 1px solid #ddd;
+        }
+
+        /* Header section */
+        .b {
+            background-color: lightblue; /* Blue background */
+            padding: 10px;
+            border-radius: 8px 8px 0 0;
+            text-align: center;
+        }
+
+        .c {
+            color: white;
+            margin: 0;
+            font-size: 24px;
+        }
+
+        /* Form fields */
+        .e {
+            margin-bottom: 20px;
+        }
+
+        .h {
+            display: block;
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 8x;
+            margin-top:5px;
+        }
+
+        input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            margin-bottom: 10px;
+            background-color: #f9f9f9;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="email"]:focus, input[type="password"]:focus {
+            border-color: #4c6ef5; /* Highlighted border on focus */
+            outline: none;
+        }
+
+        /* Back button */
+        .g {
+            width: 100%;
+            padding: 12px;
+            background-color:lightgreen; /* Red color for emphasis */
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .g:hover {
+            background-color: green; /* Darker red on hover */
+        }
+
+        /* Spacing and alignment tweaks */
+        .f {
+            width: 100%;
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="a">
+        <div class="b">
+            <h2 class="c">SIGN UP</h2>
+        </div>
+        <div class="e">
+            <label class="h">EMAIL</label>
+            <input type="email" placeholder="Please enter your email" class="f">
+        </div>
+        <div class="e">
+            <label class="h">PASSWORD</label>
+            <input type="password" placeholder="Please enter your password" class="f">
+        </div>
+        <div>
+            <button class="g" onclick="window.location.href='http://127.0.0.1:5500/login.html'">Back to Login</button>
+        </div>
+    </div>
+</body>
+</html>
